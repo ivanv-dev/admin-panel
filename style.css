@@ -44,11 +44,68 @@ padding: 0;
     padding: 2rem;
     grid-area: t;
     display: grid;
-    height: 10vw;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    height: 5vw;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "search command"
-    "intro intro ";
+    "search search command command"
+    "intro intro intro buttons";
+
+}
+.intro{
+    width: 10vw;
+    margin-top: 1rem;
+    align-self: end;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: 
+    "avatar text-intro text-intro";
+    font-family: sans-serif;
+}
+
+.intro img{
+    margin-top: 1rem;
+}
+.text-intro{
+    margin-top: 1rem;
+    height: 4vh;
+    grid-area: text-intro;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr ;
+    grid-template-areas: 
+    "message message message"
+    "usr usr usr";
+}
+.profile-pic-intro{
+    grid-area: avatar;
+}
+
+.hi-message{
+    grid-area: message;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.username-intro{
+    width: 14vw;
+    grid-area: usr;
+}
+
+.buttons{
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+.buttons button{
+    background-color: #2992d3;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 5vw;
+    margin: 0 5px;
 
 }
 
